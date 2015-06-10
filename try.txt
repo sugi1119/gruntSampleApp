@@ -1,0 +1,12 @@
+module.exports = function(grunt){
+  //set up Grunt
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json')
+  });
+
+  //define default task
+  grunt.registerTask('default', 'Log some stuff.', function(){
+    //output of log message
+    grunt.log.write('Logging some stuff...').ok();
+  });
+};
